@@ -4,9 +4,9 @@ const Footer = () => {
     const [year, setYear] = useState(new Date().getFullYear());
 
     return (
-       <div style={style}>
+       <footer style={style}>
         <p className="text-center text-secondary-emphasis fw-bold">Copyright © {year} </p>
-       </div> 
+       </footer> 
     )
 }
 

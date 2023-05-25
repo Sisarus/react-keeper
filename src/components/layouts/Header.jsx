@@ -1,8 +1,8 @@
 const Header = () =>{
     return (
-        <div style={style} className="shadow p-3 mb-5">
+        <header style={style} className="shadow p-3 mb-5">
             <h1>Keeper</h1>
-       </div> 
+       </header> 
     )
 }
 
