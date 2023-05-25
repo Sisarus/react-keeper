@@ -1,7 +1,7 @@
 const Header = () =>{
     return (
         <div style={style} className="shadow p-3 mb-5">
-            <h1 className="p ">Keeper</h1>
+            <h1>Keeper</h1>
        </div> 
     )
 }
