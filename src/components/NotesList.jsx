@@ -1,8 +1,8 @@
-const notes = [
+const notesList = [
     {
         key: 1,
         title: "Title",
-        content: "Content"
+        content: "Contentddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
     },
     {
         key: 2,
@@ -12,4 +12,4 @@ const notes = [
 ]
 
 
-export default notes
+export default notesList

@@ -1,23 +1,18 @@
-const Note = ({title, content}) => {
+import {styleNote, styleNoteP, mainButtonStyle} from "../styles/styles"
+
+const Note = ({id, title, content, onDelete}) => {
+
+    const handleClick = () => {
+        onDelete(id)
+    }
+
     return (
         <div className="shadow" style={styleNote}>
             <h3>{title}</h3>
             <p style={styleNoteP}>{content}</p>
+            <button onClick={handleClick} style={mainButtonStyle}>DELETE</button>
        </div> 
     )
 }
 
 export default Note
-
-const styleNote = {
-    backgoundColor: '#fff',
-    borderRadius: '0.7rem',
-    padding: '1rem',
-    width: '10rem',
-    margin: '2rem',
-    float: 'left'
-}
-
-const styleNoteP = {
-    fontSize: '1.1rem',
-}

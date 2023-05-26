@@ -1,14 +1,14 @@
-import Note from "./Note";
-import notes from "./NoteList";
+import Note from "./Note"
 
-const Notes = () => {
+const Notes = ({notes, deleteNote}) => {
+
     return (
-        <>
-        {notes.map(note =>  
-            <Note key={note.id} title={note.title} content={note.content}/>
+      <>
+        {notes.map((n, id) =>
+          <Note id={id} key={id} title={n.title} content={n.content} onDelete={deleteNote}/>
         )}
-        </>
-    )
-}
+      </>
+    );
+  };
 
-export default Notes;
+export default Notes
