@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Little app like Google Keeper
+
+Create and delete notes.
 
 ## Available Scripts
 
