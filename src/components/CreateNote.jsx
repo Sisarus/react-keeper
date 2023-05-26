@@ -1,5 +1,6 @@
 import { useState } from "react"
-import {styleNote, mainButtonStyle, createNoteStyle} from "../styles/styles"
+import {styleNote, iconButtonStyle, createNoteStyle, styleIcon, notesAreaBackgoundStyle} from "../styles/styles"
+import { FaPlus } from "react-icons/fa";
 
 const CreateNote = ({onAdd}) => {
     const [note, setNote] = useState({
@@ -46,7 +47,7 @@ const CreateNote = ({onAdd}) => {
                 value={note.content}
                 style={createNoteStyle}
             />
-            <button onClick={submitNote} style={mainButtonStyle}>Add</button>
+            <button onClick={submitNote} style={iconButtonStyle}><FaPlus style={styleIcon}/></button>
             </form>
         </div>
     )

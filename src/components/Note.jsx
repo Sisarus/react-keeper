@@ -1,4 +1,5 @@
-import {styleNote, styleNoteP, mainButtonStyle} from "../styles/styles"
+import {styleNote, styleNoteP, iconButtonStyle, styleIcon} from "../styles/styles"
+import { FaTrashAlt } from "react-icons/fa";
 
 const Note = ({id, title, content, onDelete}) => {
 
@@ -10,7 +11,7 @@ const Note = ({id, title, content, onDelete}) => {
         <div className="shadow" style={styleNote}>
             <h3>{title}</h3>
             <p style={styleNoteP}>{content}</p>
-            <button onClick={handleClick} style={mainButtonStyle}>DELETE</button>
+            <button onClick={handleClick} style={iconButtonStyle}><FaTrashAlt style={styleIcon} /></button>
        </div> 
     )
 }

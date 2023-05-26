@@ -9,7 +9,7 @@ export const headerStyle = {
 }
 
 export const styleNote = {
-    backgoundColor: '#fff',
+    backgroundColor: '#ffffff',
     borderRadius: '0.7rem',
     padding: '1rem',
     width: '15rem',
@@ -35,6 +35,23 @@ export const mainButtonStyle = {
     float: 'right'
 }
 
+export const iconButtonStyle = {
+    backgroundColor: mainColor,
+    color: 'white',
+    border: 'none',
+    borderRadius: '50%',
+    width: '2rem',
+    height: '2rem',
+    fontSize: '1rem',
+    fontWeight: 'bold',
+    cursor: 'pointer',
+    float: 'right'
+}
+
+export const styleIcon = {
+    marginTop: '-0.3rem',
+}
+
 export const createNoteStyle = {
     border: lightCray + ' solid 1px',
     marginTop: '0.2rem',
@@ -42,6 +59,13 @@ export const createNoteStyle = {
     borderRadius: '0.2rem'
 }
 
+export const notesAreaBackgoundStyle =  {
+    backgroundColor: lightCray,
+    backgroundImage: 'url("https://www.transparenttextures.com/patterns/arches.png")',
+    backgroundSize: 'auto',
+    backgroundPosition: 'center',
+    height: '100vh',
+}
 
 // Need default
 const Colors = () =>{
